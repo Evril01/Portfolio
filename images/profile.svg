@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-labelledby="title desc">
+  <title id="title">Evril profile placeholder</title>
+  <desc id="desc">A stylized portrait placeholder for Evril Nemakhavhani.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" rx="300" fill="url(#bg)"/>
+  <circle cx="300" cy="220" r="110" fill="#e2e8f0"/>
+  <path d="M170 500c18-90 86-140 130-140s112 50 130 140" fill="#e2e8f0"/>
+  <circle cx="245" cy="190" r="10" fill="#0f172a"/>
+  <circle cx="355" cy="190" r="10" fill="#0f172a"/>
+  <path d="M260 255c25 28 55 28 80 0" stroke="#0f172a" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <text x="300" y="560" font-family="Arial, sans-serif" font-size="36" font-weight="700" text-anchor="middle" fill="#f8fafc">Evril</text>
+</svg>
