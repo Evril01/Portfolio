@@ -21,12 +21,12 @@
       </div>
 
       <div class="nav-links">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="skills.html">Skills</a>
-        <a href="certifications.html">Certifications</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </div>
 
       <button id="nav-toggle" class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,12 +34,12 @@
       </button>
 
       <div class="mobile-menu" id="primary-navigation" aria-hidden="true">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="skills.html">Skills</a>
-        <a href="certifications.html">Certifications</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </div>
 
       <label class="theme-toggle" for="theme-switch">
@@ -50,7 +50,7 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section id="home" class="hero">
       <div class="hero-copy">
         <p class="eyebrow">Junior Developer</p>
         <h1>Hi, I'm <span>Evril</span></h1>
@@ -65,7 +65,7 @@
 
         <div class="hero-buttons">
           <a href="cv/CV%20(1).pdf" class="btn btn-primary" download>Download CV</a>
-          <a href="projects.html" class="btn btn-outline">Explore Projects</a>
+            <a href="#projects" class="btn btn-outline">Explore Projects</a>
         </div>
 
         <div class="social-icons">
@@ -82,6 +82,258 @@
       </div>
 
     </section>
+
+    <section id="about" class="about-section page-shell">
+      <div class="about-card">
+        <p class="eyebrow">About me</p>
+        <h1>About <span>Me</span></h1>
+
+        <p class="about-lead">
+          Hello! I'm Evril Nemakhavhani, a <strong>Motivated Junior Developer</strong> specializing in
+          building scalable, interactive web solutions.
+        </p>
+
+        <p class="about-text">
+          I bring hands-on experience across the full-stack, combining core development with proficiency in
+          software testing <strong>(Manual & Selenium)</strong> and UI/UX design.
+        </p>
+
+        <p class="about-text">
+          Eager to contribute immediately to a dynamic agile team, I am driven by continuous learning and
+          committed to upholding high industry standards through inclusive development practices and mentorship.
+        </p>
+
+        <a href="./cv/CV%20(1).pdf" class="btn-cv" download>Download CV</a>
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section page-shell">
+      <p class="eyebrow">Core strengths</p>
+      <h1>My <span>Skills</span></h1>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">↔</div>
+          <h3>Frontend Development</h3>
+          <p>
+            HTML5, CSS3, JavaScript (ES6+), React, Next.js, Redux, Tailwind CSS,<br>
+            Responsive Design, Web Performance Optimization.
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">⚙</div>
+          <h3>Backend Development</h3>
+          <p>
+            Java (Spring Boot basics), Flask/Python, SQL (PostgreSQL),<br>
+            MySQL, API Integration (REST), Git & Version Control.
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🎨</div>
+          <h3>Quality Assurance & Design</h3>
+          <p>
+            Manual & Exploratory Testing, Automation Tools (Selenium),<br>
+            Figma (Prototyping & Wireframing), (A11Y), User-centered Design.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="certifications-section page-shell">
+      <p class="eyebrow">Learning path</p>
+      <h1>My <span>Certifications</span></h1>
+
+      <div class="cert-grid">
+        <div class="cert-card">
+          <div class="cert-icon">☁️</div>
+          <h3>AWS Foundations: Getting Started with the AWS Cloud Essentials</h3>
+          <p class="cert-institution">AWS Training & Certification</p>
+          <p>
+            Completed the AWS Foundations: Getting Started with the AWS Cloud Essentials training, building foundational knowledge of cloud computing and Amazon Web Services (AWS).
+          </p>
+          <div class="cert-badge">Completed: August 13, 2026 • Credential: Completion Certificate</div>
+          <a href="certs/aws-foundations.pdf" class="btn-cert" target="_blank" rel="noopener">View Certificate</a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">🏆</div>
+          <h3>More Certifications Coming Soon</h3>
+          <p>
+            Currently working towards additional certifications in web development, cloud computing, and software engineering. Stay tuned for updates on my continuous learning journey!
+          </p>
+          <div class="cert-tags">
+            <span>React Certification</span>
+            <span>AWS Cloud</span>
+            <span>Java Certification</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-hero page-shell">
+      <p class="eyebrow">Selected work</p>
+      <h1>My <span>Projects</span></h1>
+
+      <p class="projects-subtitle">
+        Explore a comprehensive collection of my projects, showcasing modern design principles,<br>
+        cutting-edge technologies, and my journey through full-stack development.
+      </p>
+
+      <div class="featured-projects">
+        <h2>Featured Projects</h2>
+
+        <div class="project-grid">
+          <div class="project-card" style="background: linear-gradient(135deg, #22c55e, #16a34a);">
+            <div class="project-preview">
+              <img src="./images/project1.jpg" alt="SneakerHub" />
+            </div>
+            <h3>SneakerHub</h3>
+            <p>
+              A modern e-commerce platform for sneaker enthusiasts. Features responsive design, product catalog, shopping cart, and user-friendly navigation.
+            </p>
+            <div class="project-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>Tailwind CSS</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn-project">Live Demo</a>
+              <a href="#" class="btn-project secondary">View Project</a>
+            </div>
+          </div>
+
+          <div class="project-card" style="background: linear-gradient(135deg, #a855f7, #9333ea);">
+            <div class="project-preview">
+              <img src="./images/project2.jpg" alt="Sista's Glam Palace" />
+            </div>
+            <h3>Sista's Glam Palace</h3>
+            <p>
+              Mock booking platform for nail and beauty appointments. Smooth online scheduling, responsive layout, and simple user experience.
+            </p>
+            <div class="project-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Responsive</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn-project">Live Demo</a>
+              <a href="#" class="btn-project secondary">View Project</a>
+            </div>
+          </div>
+
+          <div class="project-card" style="background: linear-gradient(135deg, #3b82f6, #2563eb);">
+            <div class="project-preview">
+              <img src="./images/project3.jpg" alt="NetflixionSix" />
+            </div>
+            <h3>NetflixionSix</h3>
+            <p>
+              Movie trailer showcase platform with seamless video integration and intuitive design for movie enthusiasts.
+            </p>
+            <div class="project-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Video API</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn-project">Live Demo</a>
+              <a href="#" class="btn-project secondary">View Project</a>
+            </div>
+          </div>
+
+          <div class="project-card" style="background: linear-gradient(135deg, #ec4899, #db2777);">
+            <div class="project-preview">
+              <img src="./images/project4.jpg" alt="Lucky Slots" />
+            </div>
+            <h3>Lucky Slots</h3>
+            <p>
+              Interactive slot machine game (CS50 final project). Implements random number generation, win detection, and game state management.
+            </p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>CS50</span>
+              <span>Algorithms</span>
+              <span>Game Logic</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn-project">Live Demo</a>
+              <a href="#" class="btn-project secondary">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-page page-shell">
+      <div class="contact-wrap">
+        <section class="contact-card">
+          <p class="eyebrow">Get in touch</p>
+          <h1>Let’s build something great.</h1>
+          <p>
+            I’m open to junior developer roles, freelance work, collaboration, and creative projects.
+            Reach out and I’ll get back to you as soon as possible.
+          </p>
+
+          <div class="contact-list">
+            <div class="contact-item">
+              <div class="contact-icon">✉</div>
+              <div>
+                <h3>Email</h3>
+                <p><a href="mailto:nemakhavhaimurendeni@gmail.com">nemakhavhaimurendeni@gmail.com</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <h3>Location</h3>
+                <p>South Africa</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">🔗</div>
+              <div>
+                <h3>LinkedIn</h3>
+                <p><a href="https://www.linkedin.com/in/murendeni-nemakhavhani-ba6a82296/" target="_blank" rel="noreferrer">linkedin.com/in/murendeni-nemakhavhani-ba6a82296</a></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <form class="contact-form" action="mailto:nemakhavhaimurendeni@gmail.com" method="post" enctype="text/plain">
+          <h2>Send a message</h2>
+
+          <label>
+            Full name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+
+          <label>
+            Email address
+            <input type="email" name="email" placeholder="" required />
+          </label>
+
+          <label>
+            Subject
+            <input type="text" name="subject" placeholder="Project enquiry" required />
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" placeholder="Tell me about your project..." required></textarea>
+          </label>
+
+          <button type="submit" class="contact-button">Send Message</button>
+        </form>
+      </div>
+    </section>
+
   </main>
 
   <footer>

@@ -28,6 +28,8 @@ html {
   background: var(--bg);
   opacity: 0;
   transition: opacity 0.12s ease;
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
 html.theme-ready {
@@ -415,50 +417,6 @@ footer {
     text-align: center;
     padding-top: 110px;
   }
-  /* Responsive navigation: collapse to hamburger on small screens */
-  @media (max-width: 860px) {
-    .nav-links {
-      display: none;
-    }
-    .nav-toggle {
-      display: flex;
-    }
-    /* mobile adjustments */
-    header nav { height: 64px; padding: 0 4%; }
-    .logo-wrapper { font-size: 1.2rem; }
-    .nav-links a { font-size: 0.95rem }
-
-    .mobile-menu {
-      position: fixed;
-      top: 64px;
-      left: 0;
-      right: 0;
-      background: var(--nav-bg);
-      border-top: 1px solid var(--border);
-      display: none;
-      flex-direction: column;
-      gap: 0;
-      padding: 0.75rem 4%;
-      z-index: 999;
-      transform-origin: top center;
-      transform: translateY(-6px) scaleY(0.98);
-      opacity: 0;
-      transition: transform 220ms ease, opacity 220ms ease;
-    }
-    .mobile-menu a {
-      display: block;
-      padding: 0.9rem 0;
-      color: var(--text);
-      text-decoration: none;
-      font-weight: 600;
-    }
-    body.nav-open .mobile-menu {
-      display: flex;
-      transform: translateY(0) scaleY(1);
-      opacity: 1;
-    }
-    body.nav-open { overflow: hidden; }
-  }
 
   .hero-copy {
     text-align: center;
@@ -467,6 +425,63 @@ footer {
   .hero-buttons,
   .social-icons {
     justify-content: center;
+  }
+}
+
+@media (max-width: 860px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  header nav {
+    height: 64px;
+    padding: 0 4%;
+  }
+
+  .logo-wrapper {
+    font-size: 1.2rem;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: var(--nav-bg);
+    border-top: 1px solid var(--border);
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    padding: 0.75rem 4%;
+    z-index: 999;
+    max-height: calc(100vh - 64px);
+    overflow-y: auto;
+    transform-origin: top center;
+    transform: translateY(-6px) scaleY(0.98);
+    opacity: 0;
+    transition: transform 220ms ease, opacity 220ms ease;
+  }
+
+  .mobile-menu a {
+    display: block;
+    padding: 0.9rem 0;
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  body.nav-open .mobile-menu {
+    display: flex;
+    transform: translateY(0) scaleY(1);
+    opacity: 1;
+  }
+
+  body.nav-open {
+    overflow: auto;
   }
 }
 
