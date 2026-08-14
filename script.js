@@ -45,3 +45,43 @@
     initThemeToggle();
   }
 })();
+
+// Mobile navigation toggle
+(function () {
+  const root = document.documentElement;
+  const navToggle = document.getElementById('nav-toggle');
+  if (!navToggle) return;
+
+  function closeNav() {
+    document.body.classList.remove('nav-open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  }
+
+  function openNav() {
+    document.body.classList.add('nav-open');
+    navToggle.setAttribute('aria-expanded', 'true');
+  }
+
+  navToggle.addEventListener('click', function () {
+    if (document.body.classList.contains('nav-open')) {
+      closeNav();
+    } else {
+      openNav();
+    }
+  });
+
+  // Close nav when a link is clicked
+  document.addEventListener('click', function (e) {
+    const target = e.target;
+    if (target.tagName === 'A' && target.closest('.mobile-menu')) {
+      closeNav();
+    }
+  });
+  // Close nav when clicking outside the mobile menu
+  document.addEventListener('click', function (e) {
+    const path = e.composedPath ? e.composedPath() : (e.path || []);
+    if (!path.some(node => node && (node.id === 'primary-navigation' || node.id === 'nav-toggle'))) {
+      if (document.body.classList.contains('nav-open')) closeNav();
+    }
+  });
+})();
