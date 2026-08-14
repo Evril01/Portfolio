@@ -238,6 +238,29 @@ input:checked + .slider:before {
   font-weight: 600;
 }
 
+.animated-title,
+.animated-subtitle,
+.animated-text {
+  opacity: 0;
+  transform: translateY(22px);
+  animation: fadeUp 0.9s ease forwards;
+}
+
+.animated-title { animation-delay: 0.15s; }
+.animated-subtitle { animation-delay: 0.35s; }
+.animated-text { animation-delay: 0.55s; }
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .hero-description {
   font-size: 1.1rem;
   color: var(--text-muted);
